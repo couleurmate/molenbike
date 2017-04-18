@@ -46,10 +46,10 @@
 
 .marketing-site-footer-block .fa {
   font-size: 2rem;
-  color: #020304;
+  color: #ffffff;
 }
 
-.marketing-site-footer-block p {
+.marketing-site-footer-block p, a {
   margin-left: 1rem;
   line-height: 1.125rem;
 }
