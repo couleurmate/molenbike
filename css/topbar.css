@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .molenlogo {
-  min-height: 700px;
+  min-height: 100vh;
 }
 .logo {
   max-width: 30%;

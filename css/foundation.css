@@ -104,7 +104,8 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
      * Remove the outline on focused links when they are also active or hovered

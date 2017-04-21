@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .marketing-site-footer {
-  background: #2c3840;
-  color: #8aa0ae;
+  background: #67675C;
+  color: #E7E6D8;
   padding: 2rem 0 0;
 }
 
@@ -11,6 +11,13 @@
 }
 .marketing-site-footer .marketing-site-footer-menu-social a {
   color: #fefefe;
+}
+
+.marketing-site-footer-menu-social, fa {
+  color: #B3D16C;
+}
+.marketing-site-footer-menu-social:hover, fa {
+  color: #6E8C2A;
 }
 
 .marketing-site-footer .column-block {
@@ -53,6 +60,11 @@
   margin-left: 1rem;
   line-height: 1.125rem;
 }
+
+.marketing-site-footer-block a {
+  color: #B3D16C;
+}
+
 
 .marketing-site-footer-bottom {
   background: #020304;
