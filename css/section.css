@@ -50,6 +50,9 @@
           align-items: center;
 }
 
+.marketing-site-hero.coop {
+  background-color: #fff;
+}
 @media screen and (min-width: 40em) {
   .marketing-site-hero {
     background-position: center center;
@@ -73,8 +76,16 @@
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: 0;
-  color: #67675C; 
+  color: #67675C;
+  background-color: #fff;
+}
+  .marketing-site-hero-content .button.round.coop {
+    color: #fff;
+    background-color: #EC655E;
+    }
+.marketing-site-hero-content .button.round:hover {
   background-color: #B3D16C;
+  color: #fff;
 }
 
 @media screen and (min-width: 40em) {

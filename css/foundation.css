@@ -1472,9 +1472,11 @@ kbd {
   margin-bottom: 0.5rem;
   font-weight: normal;
   line-height: 1.4;
-  color: #ffffff;
+  color: #fff;
 }
-
+  .subheader.coop {
+    color: #EC655E;
+}
 .lead {
   font-size: 125%;
   line-height: 1.6; }
