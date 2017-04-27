@@ -30,3 +30,7 @@
 .topbar-sticky-shrink-header {
   padding: 2rem 0;
 }
+
+.row.column.text-center {
+    margin-top: 1rem;
+}
