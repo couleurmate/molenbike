@@ -1,14 +1,5 @@
 @charset "UTF-8";
 /**
- * Foundation for Sites by ZURB
- * Version 6.3.1
- * foundation.zurb.com
- * Licensed under MIT Open Source
- */
-/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
-/* Document
-       ========================================================================== */
-/**
      * 1. Change the default font family in all browsers (opinionated).
      * 2. Correct the line height in all browsers.
      * 3. Prevent adjustments of font size after orientation changes in
@@ -171,6 +162,12 @@ mark {
 /**
      * Add the correct font size in all browsers.
      */
+::selection {
+  background-color: #B3D16C;
+}
+::-moz-selection {
+  background-color: #B3D16C;
+}
 small {
   font-size: 80%; }
 
@@ -1297,7 +1294,8 @@ i {
   font-style: italic;
   line-height: inherit; }
 
-strong,
+strong {
+  font-weight: normal; }
 b {
   font-weight: bold;
   line-height: inherit; }
@@ -1332,6 +1330,9 @@ h1 {
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
+    .overtitle {
+      font-size: 1.25rem;
+    }
 
 h2 {
   font-family: 'Arvo', cursive, "Helvetica Neue", Helvetica, sans-serif;
@@ -1339,6 +1340,9 @@ h2 {
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
+    .subtitle {
+      font-size: 1.5rem;
+    }
 
 h3 {
   font-family: 'Arvo', cursive, "Helvetica Neue", Helvetica, sans-serif;
@@ -1371,8 +1375,14 @@ h6 {
 @media print, screen and (min-width: 40em) {
   h1 {
     font-size: 3rem; }
+      .overtitle {
+        font-size: 2.5rem;
+      }
   h2 {
     font-size: 2.5rem; }
+      .subtitle {
+        font-size: 3rem;
+      }
   h3 {
     font-size: 1.9375rem; }
   h4 {
@@ -1472,7 +1482,6 @@ kbd {
   margin-bottom: 0.5rem;
   font-weight: normal;
   line-height: 1.4;
-  color: #fff;
 }
   .subheader.coop {
     color: #EC655E;
@@ -4408,3 +4417,304 @@ a.thumbnail {
 
 .long-delay {
   animation-delay: 700ms !important; }
+
+/* topbar */
+.molenlogo {
+  min-height: 100vh;
+}
+.logo {
+  max-width: 50vh;
+  display: block;
+  margin: auto;
+}
+.topbar-sticky-shrink {
+  padding: 2rem;
+  transition: padding 0.25s ease;
+  background: #2c3840;
+}
+
+.topbar-sticky-shrink .menu {
+  background: #2c3840;
+}
+
+.is-stuck .topbar-sticky-shrink {
+  padding: 1rem;
+  transition: padding 0.25s ease;
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+.topbar-sticky-shrink-header {
+  padding: 2rem 0;
+}
+
+.row.column.text-center {
+    margin-top: 1rem;
+}
+
+/* Section */
+.marketing-site-features {
+  text-align: center;
+  padding: 2rem;
+  background-color: #EC655E;
+  min-height: 100vh;
+  padding-top: 20vh;
+}
+
+.marketing-site-features .fa {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.marketing-site-features .marketing-site-features-title {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-features {
+    text-align: left;
+  }
+}
+.marketing-site-features-desc {
+  color: #fff;
+  padding: 0 2rem 0 2rem;
+}
+
+.marketing-site-features-headline {
+  text-align: center;
+}
+  .white {
+    color: #fff;
+  }
+
+.marketing-site-features-subheadline {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.feature {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 4rem;
+}
+
+.marketing-site-hero {
+  background-color: #EC655E;
+  height: 65vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marketing-site-hero.coop {
+  background-color: #fff;
+}
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 32px;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #67675C;
+  background-color: #fff;
+}
+  .marketing-site-hero-content .button.round.coop {
+    color: #fff;
+    background-color: #EC655E;
+    }
+.marketing-site-hero-content .button.round:hover {
+  background-color: #B3D16C;
+  color: #fff;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero-content {
+  }
+}
+
+/* Who */
+.marketing-site-features.who {
+  background: #ffffff;
+}
+
+.marketing-site-features.who .featured-testimonials-container .orbit-previous {
+  color: #0a0a0a;
+  left: -1rem;
+}
+
+.marketing-site-features.who .featured-testimonials-container .orbit-next {
+  color: #0a0a0a;
+  right: -1rem;
+}
+
+.marketing-site-features.who .testimonial {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 1rem;
+}
+
+.marketing-site-features.who .profile-pic {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.marketing-site-features.who .featured-testimonials-quotation {
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.marketing-site-features.who .featured-testimonials-quotation::before {
+  font-size: 5rem;
+  color: #d6d6d6;
+  position: absolute;
+  top: -2.5rem;
+  left: -1.5rem;
+}
+
+.marketing-site-features.who .featured-testimonials-quotation::after {
+  font-size: 5rem;
+  color: #d6d6d6;
+  position: absolute;
+  bottom: -4rem;
+  right: -.5rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .marketing-site-features.who .featured-testimonials-quotation {
+    margin-left: 0;
+  }
+}
+
+/* Footer */
+.marketing-site-footer {
+  background: #67675C;
+  color: #E7E6D8;
+  padding: 2rem 0 0;
+}
+
+.footer-margin {
+  margin-left: 1rem;
+}
+.marketing-site-footer .marketing-site-footer-menu-social a {
+  color: #fefefe;
+}
+
+.marketing-site-footer-menu-social, fa {
+  color: #EC655E;
+}
+.marketing-site-footer-menu-social:hover, fa {
+  color: #B3D16C;
+}
+
+.marketing-site-footer .column-block {
+}
+
+.marketing-site-footer > .row {
+}
+
+@media screen and (max-width: 39.9375em) {
+  .marketing-site-footer .columns {
+    margin-bottom: 2rem;
+  }
+}
+
+.marketing-site-footer-name {
+  color: #fefefe;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.marketing-site-footer-title {
+  color: #fefefe;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.marketing-site-footer-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.marketing-site-footer-block .fa {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.marketing-site-footer-block p, a {
+  margin-left: 1rem;
+  line-height: 1.125rem;
+}
+
+.marketing-site-footer-block a {
+  color: #EC655E;
+}
+
+
+.marketing-site-footer-bottom {
+  background: #020304;
+  padding: 1rem 0;
+}
+
+.marketing-site-footer-bottom p,
+.marketing-site-footer-bottom .menu {
+  margin-bottom: 0;
+}
+
+.marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
+  color: #8aa0ae;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  .marketing-site-footer-bottom {
+    text-align: center;
+  }
+}
