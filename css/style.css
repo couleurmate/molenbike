@@ -1287,7 +1287,8 @@ p {
   margin-bottom: 1rem;
   font-size: inherit;
   line-height: 1.6;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  font-family: "Inder"}
 
 em,
 i {
@@ -3246,14 +3247,16 @@ html.is-reveal-open body {
           backface-visibility: hidden;
   display: none;
   padding: 1rem;
+  outline: 0;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 10;
   background-color: #fefefe;
   position: relative;
-  top: 100px;
+  top: 0 !important;
+  bottom: 0;
   margin-right: auto;
   margin-left: auto;
-  overflow-y: auto; }
+  overflow: hidden; }
   [data-whatinput='mouse'] .reveal {
     outline: 0; }
   @media print, screen and (min-width: 40em) {
@@ -4506,7 +4509,7 @@ a.thumbnail {
 
 .marketing-site-hero {
   background-color: #EC655E;
-  height: 65vh;
+  height: 100vh;
   background-size: cover;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4540,7 +4543,7 @@ a.thumbnail {
 .marketing-site-hero-content .button.round {
   border-radius: 5000px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 0;
   color: #67675C;
   background-color: #fff;
@@ -4548,6 +4551,7 @@ a.thumbnail {
   .marketing-site-hero-content .button.round.coop {
     color: #fff;
     background-color: #EC655E;
+    display: inline-block;
     }
 .marketing-site-hero-content .button.round:hover {
   background-color: #B3D16C;
