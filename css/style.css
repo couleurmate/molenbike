@@ -1361,7 +1361,7 @@ h4 {
 
 h5 {
   font-family: 'Arvo', cursive, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.0625rem;
+  font-size: 1.0625rem !important;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -3246,14 +3246,15 @@ html.is-reveal-open body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   display: none;
-  padding: 1rem;
-  outline: 0;
+  padding: 2rem 1rem;
   border: 1px solid #cacaca;
   border-radius: 10;
   background-color: #fefefe;
-  position: relative;
-  top: 0 !important;
+  position: fixed;
+  top: 10% !important;
+  right: 0;
   bottom: 0;
+  left: 0 !important;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden; }
@@ -3281,7 +3282,8 @@ html.is-reveal-open body {
   @media print, screen and (min-width: 40em) {
     .reveal.tiny {
       width: 30%;
-      max-width: 75rem; } }
+      max-width: 75rem;
+      max-height: 33rem !important; } }
   @media print, screen and (min-width: 40em) {
     .reveal.small {
       width: 50%;
@@ -4450,7 +4452,7 @@ a.thumbnail {
 }
 
 .topbar-sticky-shrink-header {
-  padding: 2rem 0;
+  padding: 5vh 2rem 2rem;
 }
 
 .row.column.text-center {
@@ -4489,6 +4491,7 @@ a.thumbnail {
 
 .marketing-site-features-headline {
   text-align: center;
+  padding-bottom: 2rem;
 }
   .white {
     color: #fff;
@@ -4509,14 +4512,9 @@ a.thumbnail {
 
 .marketing-site-hero {
   background-color: #EC655E;
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 20vh;
 }
 
 .marketing-site-hero.coop {
@@ -4538,6 +4536,14 @@ a.thumbnail {
 
 .marketing-site-hero-content h1 {
   font-size: 32px;
+}
+
+.row.business {
+  margin: 5vh 9vh;
+}
+
+.columns.business {
+   padding: 5vh;
 }
 
 .marketing-site-hero-content .button.round {
@@ -4579,18 +4585,14 @@ a.thumbnail {
 }
 
 .marketing-site-features.who .testimonial {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 2rem 1rem;
+  text-align: center;
+
 }
 
 .marketing-site-features.who .profile-pic {
-  max-width: 100px;
+  max-width: 5rem;
   border-radius: 50%;
+  margin-bottom: 2rem;
 }
 
 .marketing-site-features.who .featured-testimonials-quotation {
@@ -4658,7 +4660,7 @@ a.thumbnail {
 .marketing-site-footer-name {
   color: #fefefe;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .marketing-site-footer-title {
@@ -4676,7 +4678,7 @@ a.thumbnail {
 
 .marketing-site-footer-block .fa {
   font-size: 2rem;
-  color: #ffffff;
+  color: #EC655E;
 }
 
 .marketing-site-footer-block p, a {
@@ -4685,7 +4687,7 @@ a.thumbnail {
 }
 
 .marketing-site-footer-block a {
-  color: #EC655E;
+  color: #fff;
 }
 
 
