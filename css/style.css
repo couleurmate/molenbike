@@ -3305,6 +3305,7 @@ html.is-reveal-open body {
     border-radius: 0; }
   @media screen and (max-width: 39.9375em) {
     .reveal {
+      position: relative;
       top: 0 !important;
       left: 0;
       width: 100%;
