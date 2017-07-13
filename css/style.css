@@ -3305,7 +3305,6 @@ html.is-reveal-open body {
     border-radius: 0; }
   @media screen and (max-width: 39.9375em) {
     .reveal {
-      position: relative;
       top: 0 !important;
       left: 0;
       width: 100%;
@@ -4586,14 +4585,13 @@ a.thumbnail {
 
 .marketing-site-features.who .testimonial {
   display: -webkit-flex;
-  display: -ms-fle;
-  display: inline-block;
+  display: -ms-flex;
+  display: inherit;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 2rem 1rem;
   text-align: center;
-
 }
 
 .marketing-site-features.who .profile-pic {
@@ -4602,32 +4600,9 @@ a.thumbnail {
   margin-bottom: 2rem;
 }
 
-.marketing-site-features.who .featured-testimonials-quotation {
-  margin-left: 1rem;
-  margin-bottom: 0rem;
-  padding: 1rem;
-  position: relative;
-}
-
-.marketing-site-features.who .featured-testimonials-quotation::before {
-  font-size: 5rem;
-  color: #d6d6d6;
-  position: absolute;
-  top: -2.5rem;
-  left: -1.5rem;
-}
-
-.marketing-site-features.who .featured-testimonials-quotation::after {
-  font-size: 5rem;
-  color: #d6d6d6;
-  position: absolute;
-  bottom: -4rem;
-  right: -.5rem;
-}
-
 @media screen and (max-width: 39.9375em) {
-  .marketing-site-features.who .featured-testimonials-quotation {
-    margin-left: 0;
+  .testimonial .marketing-site-features.who .featured-testimonials-quotation {
+    margin: 1rem 0;
   }
 }
 
