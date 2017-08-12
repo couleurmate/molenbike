@@ -1623,10 +1623,10 @@ kbd {
     margin-right: 0;
     margin-left: 0; }
   .button.primary {
-    background-color: #1779ba;
+    background-color: #EC655E;
     color: #fefefe; }
     .button.primary:hover, .button.primary:focus {
-      background-color: #126195;
+      background-color: #c25650;
       color: #fefefe; }
   .button.secondary {
     background-color: #767676;
@@ -1661,11 +1661,11 @@ kbd {
       border-color: #0c3d5d;
       color: #0c3d5d; }
     .button.hollow.primary {
-      border: 1px solid #1779ba;
-      color: #1779ba; }
+      border: 1px solid #EC655E;
+      color: #EC655E; }
       .button.hollow.primary:hover, .button.hollow.primary:focus {
-        border-color: #0c3d5d;
-        color: #0c3d5d; }
+        border-color: #933f3b;
+        color: #933f3b; }
     .button.hollow.secondary {
       border: 1px solid #767676;
       color: #767676; }
@@ -4599,6 +4599,11 @@ a.thumbnail {
   border-radius: 50%;
   margin-bottom: 2rem;
 }
+  @media screen and (max-width: 39.9375em) {
+    .profile {
+      padding: 0 1rem;
+      }
+  }
 
 @media screen and (max-width: 39.9375em) {
   .testimonial .marketing-site-features.who .featured-testimonials-quotation {
@@ -4614,7 +4619,7 @@ a.thumbnail {
 }
 
 .footer-margin {
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 .marketing-site-footer .marketing-site-footer-menu-social a {
   color: #fefefe;
@@ -4669,9 +4674,8 @@ a.thumbnail {
 }
 
 .marketing-site-footer-block a {
-  color: #fff;
+  color: #E7E6D8;
 }
-
 
 .marketing-site-footer-bottom {
   background: #020304;
