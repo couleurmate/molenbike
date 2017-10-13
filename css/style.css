@@ -1340,7 +1340,7 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 2rem; }
     .subtitle {
       font-size: 1.5rem;
     }
@@ -3064,7 +3064,8 @@ select {
   height: 0;
   margin: 0;
   list-style: none;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0 !important}
 
 .orbit-slide {
   width: 100%; }
@@ -4462,10 +4463,9 @@ a.thumbnail {
 /* Section */
 .marketing-site-features {
   text-align: center;
-  padding: 1rem;
   background-color: #EC655E;
   min-height: 100vh;
-  padding-top: 20vh;
+  padding: 20vh 1rem;
 }
 
 .marketing-site-features .fa {
@@ -4513,7 +4513,7 @@ a.thumbnail {
   background-color: #EC655E;
   min-height: 100vh;
   background-size: cover;
-  padding-top: 20vh;
+  padding: 20vh 1rem;
 }
 
 .marketing-site-hero.coop {
@@ -4609,6 +4609,45 @@ a.thumbnail {
   .testimonial .marketing-site-features.who .featured-testimonials-quotation {
     margin: 1rem 0;
   }
+}
+
+/* Client Card */
+
+.ecommerce-product-slider .orbit-previous,
+.ecommerce-product-slider .orbit-next {
+  color: #cacaca;
+}
+
+.ecommerce-product-slider .orbit-bullets button {
+  height: 0.65rem;
+  width: 0.65rem;
+}
+
+.ecommerce-product-slider .product-card {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ecommerce-product-slider .product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.client-pic {
+  max-width: 10rem !important;
+  box-sizing: border-box;
+}
+  @media screen and (max-width: 39.9375em) {
+    .client-pic {
+      max-width: 4rem !important;
+      }
+  }
+
+.client-align {
+  margin-top: 6vh;
+}
+.client-spores {
+  margin-top: 4vh;
 }
 
 /* Footer */
