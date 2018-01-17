@@ -3064,8 +3064,7 @@ select {
   height: 0;
   margin: 0;
   list-style: none;
-  overflow: hidden;
-  padding: 0 !important}
+  overflow: visible; }
 
 .orbit-slide {
   width: 100%; }
@@ -4676,8 +4675,9 @@ a.thumbnail {
   color: #fff;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (max-width: 39.9375em) {
   .marketing-site-hero-content {
+    padding: 0rem;
   }
 }
 
@@ -4759,7 +4759,7 @@ a.thumbnail {
   border: dotted 1px #cacaca;
 }
 
-@media screen and (max-width: 640px) {
+/*@media screen and (max-width: 640px) {
   .responsive-card-table {
 
   }
@@ -4810,7 +4810,7 @@ a.thumbnail {
     top: 1px;
     z-index: 0;
   }
-}
+} */
 
 .pricing-table {
   background-color: #fefefe;
@@ -4859,6 +4859,14 @@ a.thumbnail {
   color: #cacaca;
 }
 
+@media screen and (max-width: 39.9375em) {
+  .orbit-client {
+    min-height: 20rem;
+    margin: 2rem !important;
+    overflow: visible !important;
+    }
+  }
+
 .ecommerce-product-slider .orbit-bullets button {
   height: 0.65rem;
   width: 0.65rem;
@@ -4869,8 +4877,11 @@ a.thumbnail {
   margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 39.9375em) {
-  .product-card {
+  .ecommerce-product-slider .product-card {
     padding: 0rem !important;
+    max-height: 7rem;
+    max-width: 7rem;
+    margin-bottom: none;
     }
 }
 
@@ -4886,7 +4897,8 @@ a.thumbnail {
 }
   @media screen and (max-width: 39.9375em) {
   .client {
-    width: 9rem !important;
+    width: 8rem !important;
+    height: 8rem;
     }
   }
 .client-pic {
@@ -4898,7 +4910,7 @@ a.thumbnail {
       max-width: 6rem !important;
       }
   }
-  .client-bruzz {
+  .client-box {
     margin-top: 32%;
     max-width: 40vh;
   }

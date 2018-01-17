@@ -36,8 +36,8 @@
           <h3>Livraisons de produits éco-responsables à Bruxelles</h3>
           <div class="button-group">
             <a class="hollow button primary" href="index.html">FR</a>
-            <a class="hollow button primary" href="indexNL.html">NL</a>
-            <a class="hollow button primary" href="indexEN.html">EN</a>
+            <a class="hollow button primary" href="nl/index.html">NL</a>
+            <a class="hollow button primary" href="en/index.html">EN</a>
           </div>
         </div>
       </header>
@@ -154,10 +154,10 @@
             <button href="#" class="round button" data-open="modalM2U">Molenbike 2 You</button>
           </div>
         </div>
+
         <!-- B2B -->
         <div class="tiny reveal" id="modalB2B" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
           <!--<img src="image/B2B.png">-->
-
           <table class="responsive-card-table unstriped">
             <thead>
               <tr>
@@ -171,50 +171,55 @@
               <tr>
                 <td data-label="Poids">&lt5kg</td>
                 <td data-label="Zone 1">8</td>
-                <td data-label="Zone 2">11</td>
-                <td data-label="Zone 3">14</td>
+                <td data-label="Zone 2">10</td>
+                <td data-label="Zone 3">13</td>
               </tr>
               <tr>
                 <td data-label="Poids">&lt15kg</td>
-                <td data-label="Zone 1">11</td>
-                <td data-label="Zone 2">14</td>
-                <td data-label="Zone 3">18</td>
+                <td data-label="Zone 1">10</td>
+                <td data-label="Zone 2">13</td>
+                <td data-label="Zone 3">16</td>
               </tr>
               <tr>
                 <td data-label="Poids">&lt30kg</td>
-                <td data-label="Zone 1">14</td>
-                <td data-label="Zone 2">18</td>
-                <td data-label="Zone 3">22</td>
+                <td data-label="Zone 1">13</td>
+                <td data-label="Zone 2">26</td>
+                <td data-label="Zone 3">20</td>
               </tr>
               <tr>
                 <td data-label="Poids">&lt60kg</td>
-                <td data-label="Zone 1">18</td>
-                <td data-label="Zone 2">22</td>
-                <td data-label="Zone 3">26</td>
+                <td data-label="Zone 1">16</td>
+                <td data-label="Zone 2">20</td>
+                <td data-label="Zone 3">24</td>
               </tr>
               <tr>
-                <td data-label="Poids">Max 100kg</td>
-                <td data-label="Zone 1">22</td>
-                <td data-label="Zone 2">26</td>
-                <td data-label="Zone 3">31</td>
+                <td data-label="Poids">Max 90kg</td>
+                <td data-label="Zone 1">20</td>
+                <td data-label="Zone 2">24</td>
+                <td data-label="Zone 3">29</td>
               </tr>
             </tbody>
           </table>
 
           <ul class="pricing-table">
-            <li class="title">7km et plus ?<br>Sur devis</li>
+            <li class="title">Plus de 7 km ou supérieur à 91 kg ?<br>Sur devis</li>
             <li class="description">Prix indicatifs<br>Offre réservée aux professionnels</li>
             <li><a href="mailto:info@molenbike.be" class="round button coop">Contactez nous</a></li>
           </ul>
+
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+
         <!-- B2C -->
         <div class="tiny reveal" id="modalB2C" data-reveal data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
           <ul class="pricing-table">
             <li class="title">Prix à la course</li>
             <li><img src="image/B2C.png" style="max-width: 50%"></li>
-            <li class="price">Zone 10 minutes : 12,5 €</li>
-            <li class="price">Zone 20 minutes : 13,5 €</li>
-            <li class="price">Zone 30 minutes : 14,5 €</li>
+            <li class="price">Zone 10 minutes : 9 €</li>
+            <li class="price">Zone 20 minutes : 12 €</li>
+            <li class="price">Zone 30 minutes : 15 €</li>
             <li class="description">Prix indicatifs - charge maximale 30kg</li>
             <li><a href="mailto:info@molenbike.be" class="round button coop">Contactez nous</a></li>
           </ul>
@@ -277,8 +282,8 @@
     <div class="marketing-site-hero">
       <div class="marketing-site-hero-content">
         <h2 class="white">Nos clients & partenaires</h2>
-        <div class="ecommerce-product-slider orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-          <ul class="orbit-container">
+        <div class="ecommerce-product-slider orbit" role="region" aria-label="Logo clients" data-orbit>
+          <ul class="orbit-container orbit-client">
             <li class="is-active orbit-slide">
               <div class="row small-up-2 medium-up-4 large-up-4 align-middle">
                 <div class="column">
@@ -291,7 +296,7 @@
                 <div class="column">
                   <div class="product-card">
                     <div class="card-section client">
-                      <img class="client-pic client-bruzz" src="image/client/bruzz.png" alt="Bruzz">
+                      <img class="client-pic client-box" src="image/client/bruzz.png" alt="Bruzz">
                     </div>
                   </div>
                 </div>
@@ -316,21 +321,21 @@
                 <div class="column">
                   <div class="product-card">
                     <div class="card-section client">
-                      <img class="client-pic client-bruzz" src="image/client/villagefinance.jpg" alt="Village Finance">
+                      <img class="client-pic client-box" src="image/client/villagefinance.jpg" alt="Village Finance">
                     </div>
                   </div>
                 </div>
                 <div class="column">
                   <div class="product-card">
                     <div class="card-section client">
-                      <img class="client-pic client-bruzz" src="image/client/cooking.png" alt="Co-oking">
+                      <img class="client-pic client-box" src="image/client/cooking.png" alt="Co-oking">
                     </div>
                   </div>
                 </div>
                 <div class="column">
                   <div class="product-card">
                     <div class="card-section client">
-                      <img class="client-pic client-bruzz" src="image/client/molengeek.jpg" alt="Molengeek">
+                      <img class="client-pic client-box" src="image/client/molengeek.jpg" alt="Molengeek">
                     </div>
                   </div>
                 </div>
@@ -364,7 +369,7 @@
             <a class="menu marketing-site-footer-menu-social simple" href="https://www.linkedin.com/company/molenbike" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             <a class="menu marketing-site-footer-menu-social simple" href="https://www.instagram.com/molenbike/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </h4>
-          <h5>TVA BE 0675.648.550</h5>
+          <h5>TVA BE 0675.648.550<br>IBAN BE87 5230 8089 0294</h5>
           <p>Coopérative de coursiers bruxellois, spécialisée dans le transport de produits locaux, éco-responsables à vélo.</p>
         </div>
         <div class="medium-4 columns">
