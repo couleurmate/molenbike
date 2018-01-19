@@ -26,9 +26,10 @@
   font-family: Flaticon;
         font-size: 3rem;
 font-style: normal;
+color: #fff;
 }
 
-.flaticon-retweet:before { content: "\f100"; }
 .flaticon-package:before { content: "\f101"; }
+.flaticon-retweet:before { content: "\f100"; }
 .flaticon-bicycle:before { content: "\f102"; }
 .flaticon-brainstorm:before { content: "\f103"; }
