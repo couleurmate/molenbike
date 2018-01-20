@@ -5027,3 +5027,27 @@ a.thumbnail {
     text-align: center;
   }
 }
+
+/* Back to top button */
+#backtop {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    text-decoration: none;
+    border-radius: 1rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+#backtop:hover {
+    color: #fff !important;
+    background-color: #B3D16C;
+    text-decoration: none;
+}
