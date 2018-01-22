@@ -4712,10 +4712,16 @@ a.thumbnail {
 }
 
 .marketing-site-features.who .profile-pic {
-  max-width: 5rem;
+  max-width: 10rem;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
+  .profile-pic.red {
+    background: #EC655E;
+  }
+  .profile-pic.black {
+    background: #000;
+  }
   @media screen and (max-width: 39.9375em) {
     .profile {
       padding: 0 1rem;
@@ -4931,21 +4937,84 @@ a.thumbnail {
 .footer-margin {
   margin: 0 1rem;
 }
-.fa-stack {
-  width: 1em;
+
+
+.social-icon-button {
+  border-radius: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  background: none;
 }
-.marketing-site-footer-menu-social .fa-facebook-square {
-  color: #3B5998;
+
+.social-icon-button + .social-icon-button {
+  margin-left: 0.25rem;
 }
-.marketing-site-footer-menu-social .fa-linkedin {
-  color: #0077B5;
+
+.social-icon-button .fab {
+  background: none;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  line-height: 3.6rem;
+  transition: all 0.3s ease-in-out;
 }
-.marketing-site-footer-menu-social .fa-instagram {
-  color: #231F20;
+
+.social-icon-button span {
+  display: block;
+  border-radius: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
 }
-/*.marketing-site-footer-menu-social:hover, fa {
-  color: #EC655E;
+
+/*.social-icon-button:hover .fab {
+  color: #fefefe;
 }*/
+
+.social-icon-button:hover span {
+  display: block;
+  border-radius: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.social-icon-button.facebook {
+  color: #fff;
+}
+
+.social-icon-button.facebook span {
+  background-color: #3b5998;
+}
+
+.social-icon-button.linkedin {
+  color: #fff;
+}
+
+.social-icon-button.linkedin span {
+  background-color: #007bb5;
+}
+
+.social-icon-button.instagram {
+  color: #fff;
+}
+
+.social-icon-button.instagram span {
+  background-color: #000;
+}
 
 .marketing-site-footer .column-block {
 }
