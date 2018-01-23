@@ -4942,11 +4942,11 @@ a.thumbnail {
 .social-icon-button {
   border-radius: 3.6rem;
   width: 3.6rem;
-  height: 3.6rem;
+  height: 1.6rem;
   position: relative;
   display: inline-block;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: none;
 }
 
