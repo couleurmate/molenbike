@@ -4869,7 +4869,7 @@ a.thumbnail {
   .orbit-client {
     min-height: 20rem;
     margin: 2rem !important;
-    overflow: visible !important;
+    overflow: hidden;
     }
   }
 
