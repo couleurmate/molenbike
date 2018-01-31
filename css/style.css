@@ -4869,7 +4869,7 @@ a.thumbnail {
   .orbit-client {
     min-height: 20rem;
     margin: 2rem !important;
-    overflow: hidden;
+    overflow: hidden !important;
     }
   }
 
@@ -4887,7 +4887,7 @@ a.thumbnail {
     padding: 0rem !important;
     max-height: 7rem;
     max-width: 7rem;
-    margin-bottom: none;
+    margin-bottom: 2rem;
     }
 }
 
