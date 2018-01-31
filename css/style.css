@@ -4938,6 +4938,15 @@ a.thumbnail {
   margin: 0 1rem;
 }
 
+.social-icon {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 63.9375em) {
+  .social-icon {
+  display: block;
+  }
+}
 
 .social-icon-button {
   border-radius: 3.6rem;
@@ -5025,19 +5034,20 @@ a.thumbnail {
 @media screen and (max-width: 39.9375em) {
   .marketing-site-footer .columns {
     margin-bottom: 2rem;
+    text-align: center;
   }
 }
 
 .marketing-site-footer-name {
   color: #fefefe;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.6rem;
 }
 
 .marketing-site-footer-title {
   color: #fefefe;
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.6rem;
 }
 
 .marketing-site-footer-block {
