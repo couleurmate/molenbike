@@ -2198,6 +2198,13 @@ select {
     width: 100%; }
     .button-group.stacked .button:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-medium .button:last-child {
       margin-bottom: 0; }
+<<<<<<< HEAD
+  @media screen and (max-width: 39.9375em) {
+    .button-group {
+      margin-top: 2rem !important;
+      margin-bottom: 0 !important; } }
+=======
+>>>>>>> 27f79f25b8b8ccf9d49569ab30100f64b27cb0d3
   @media print, screen and (min-width: 40em) {
     .button-group.stacked-for-small .button {
       width: auto;
@@ -3922,6 +3929,12 @@ a.thumbnail {
 .clearfix::after {
   clear: both; }
 
+<<<<<<< HEAD
+/* topbar */
+.molenlogo {
+  min-height: 100vh;
+  background: #fdfaf7;
+=======
 .slide-in-down.mui-enter {
   transition-duration: 500ms;
   transition-timing-function: linear;
@@ -4426,12 +4439,22 @@ a.thumbnail {
 /* topbar */
 .molenlogo {
   min-height: 100vh;
+>>>>>>> 27f79f25b8b8ccf9d49569ab30100f64b27cb0d3
 }
 .logo {
   max-width: 50vh;
   display: block;
   margin: auto;
 }
+<<<<<<< HEAD
+  @media screen and (max-width: 39.9375em) {
+    .logo {
+      max-width: 40vh;
+    }
+  }
+
+=======
+>>>>>>> 27f79f25b8b8ccf9d49569ab30100f64b27cb0d3
 .topbar-sticky-shrink {
   padding: 2rem;
   transition: padding 0.25s ease;
@@ -5057,6 +5080,13 @@ a.thumbnail {
   margin-bottom: 1rem;
 }
 
+<<<<<<< HEAD
+  @media screen and (max-width: 39.9375em) {
+    .marketing-site-footer-block {
+      margin-left: 2rem !important; }}
+
+=======
+>>>>>>> 27f79f25b8b8ccf9d49569ab30100f64b27cb0d3
 .marketing-site-footer-block .fas {
   font-size: 2rem;
   color: #EC655E;
