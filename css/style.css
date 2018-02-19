@@ -4222,7 +4222,6 @@ a.thumbnail {
 }
 
 .marketing-site-features.who .profile-pic {
-  max-width: 10rem;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
@@ -4569,7 +4568,7 @@ a.thumbnail {
 
   @media screen and (max-width: 39.9375em) {
     .marketing-site-footer-block {
-      margin-left: 2rem !important; }}
+      margin-left: 2.5rem !important; }}
 
 .marketing-site-footer-block .fas {
   font-size: 2rem;
