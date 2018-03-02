@@ -4544,6 +4544,9 @@ a.thumbnail {
   .marketing-site-footer .columns {
     margin-bottom: 2rem;
     text-align: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -4568,7 +4571,12 @@ a.thumbnail {
 
   @media screen and (max-width: 39.9375em) {
     .marketing-site-footer-block {
-      margin-left: 2.5rem !important; }}
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin-bottom: 2vh;
+      min-width: 40vh;
+      }}
 
 .marketing-site-footer-block .fas {
   font-size: 2rem;
@@ -4611,12 +4619,6 @@ a.thumbnail {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (max-width: 63.9375em) {
-  .marketing-site-footer-bottom {
-    text-align: center;
   }
 }
 
