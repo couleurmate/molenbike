@@ -154,16 +154,21 @@
       <div class="marketing-site-hero-content">
         <h2 class="white">In need of a fast, fair and eco-friendly solution ?</h2>
         <p class="subheader">Molenbike delivers in Brussels Area. These are our services tailored for your needs. <br> Our prices include the collection of leftovers and deposits</p>
-        <!-- POPUP -->
+        <!-- MODAL -->
         <div class="row business">
           <div class="small-12 large-4 columns business">
-            <button href="#" class="round button" data-open="modalB2B">Business 2 Business</button>
+            <button href="#" class="round button secondary" data-open="modalB2B">Business 2 Business</button>
           </div>
           <div class="small-12 large-4 columns business">
-            <button href="#" class="round button" data-open="modalB2C">Business 2 Customer</button>
+            <button href="#" class="round button secondary" data-open="modalB2C">Business 2 Customer</button>
           </div>
           <div class="small-12 large-4 columns business">
-            <button href="#" class="round button" data-open="modalM2U">Molenbike 2 You</button>
+            <button href="#" class="round button secondary" data-open="modalM2U">Molenbike 2 You</button>
+          </div>
+        </div>
+        <div class="row business">
+          <div class="small-12 columns delivery">
+            <button href="#" class="round button success expanded" data-open="delivery">Demande de livraison</button>
           </div>
         </div>
 
@@ -216,7 +221,7 @@
           <ul class="pricing-table">
             <li class="title">More than 7 km / 91 kg ?</li>
             <li class="description">Prices for information purposes only<br>Offer for professionals with VAT number</li>
-            <li><a href="mailto:info@molenbike.be" class="round button coop">Contact us</a></li>
+            <li><a href="mailto:info@molenbike.be" class="round button primary">Contact us</a></li>
           </ul>
 
           <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -233,7 +238,7 @@
               <br>Area 30 minutes : 15 €
               <br>Offer for partners’ clients only
           </p>
-          <a href="mailto:info@molenbike.be" class="round button coop">Contact us</a>
+          <a href="mailto:info@molenbike.be" class="round button primary">Contact us</a>
           <button class="close-button" data-close aria-label="Close modal" type="button">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -242,7 +247,14 @@
         <div class="tiny reveal" id="modalM2U" data-reveal data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast" style="padding-top:10rem">
             <img src="../image/M2U.png">
             <p>We can make a tender from 33€/h without VAT</p>
-            <a href="mailto:info@molenbike.be" class="round button coop">Contact us</a>
+            <a href="mailto:info@molenbike.be" class="round button primary">Contact us</a>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Delivery -->
+        <div class="reveal" id="delivery" data-reveal data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+            <iframe src="https://molenbike.coopcycle.org/fr/embed/delivery/start" width="100%" height="100%" frameborder="0"></iframe>
           <button class="close-button" data-close aria-label="Close modal" type="button">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -260,19 +272,19 @@
           <br>The activity is managed for and by its members.</p>
         <div class="row business">
           <div class="small-12 large-4 columns business">
-            <button href="#" class="round button coop" data-open="charte">Our Charter</button>
+            <button href="#" class="round button primary" data-open="charte">Our Charter</button>
           </div>
           <div class="small-12 large-4 columns business">
-            <button href="#" class="round button coop" data-open="statut">Our Statuses</button>
+            <button href="#" class="round button primary" data-open="statut">Our Statuses</button>
           </div>
           <div class="small-12 large-4 columns business">
-            <a href="mailto:info@molenbike.be" class="round button coop">Become a Member!</a>
+            <a href="mailto:info@molenbike.be" class="round button primary">Become a Member!</a>
           </div>
         </div>
         <!-- Charte -->
         <div class="tiny reveal" id="charte" data-reveal data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast" style="padding-top:10rem">
           <p>We are riding also for cooperation, circularity, fair jobs, qualitative services, transparency, soft mobility, sustainable development.</p>
-          <a href="files/ethic.pdf" target="_blank" class="round button coop">Download our charter</a>
+          <a href="files/ethic.pdf" target="_blank" class="round button primary">Download our charter</a>
           <button class="close-button" data-close aria-label="Close modal" type="button">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -280,7 +292,7 @@
         <!-- Statuts -->
         <div class="tiny reveal" id="statut" data-reveal data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast" style="padding-top:10rem">
           <p>Molenbike was founded on May 11th, 2017.</p>
-          <a href="files/statuts.pdf" target="_blank" class="round button coop">Download our statuses</a>
+          <a href="files/statuts.pdf" target="_blank" class="round button primary">Download our statuses</a>
           <button class="close-button" data-close aria-label="Close modal" type="button">
               <span aria-hidden="true">&times;</span>
           </button>
