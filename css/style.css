@@ -1331,9 +1331,6 @@ h1 {
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
-    .overtitle {
-      font-size: 1.25rem;
-    }
 
 h2 {
   font-family: 'Arvo', cursive, "Helvetica Neue", Helvetica, sans-serif;
@@ -1341,9 +1338,6 @@ h2 {
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 2rem; }
-    .subtitle {
-      font-size: 1.5rem;
-    }
 
 h3 {
   font-family: 'Arvo', cursive, "Helvetica Neue", Helvetica, sans-serif;
@@ -1376,14 +1370,8 @@ h6 {
 @media print, screen and (min-width: 40em) {
   h1 {
     font-size: 3rem; }
-      .overtitle {
-        font-size: 2.5rem;
-      }
   h2 {
     font-size: 2.5rem; }
-      .subtitle {
-        font-size: 3rem;
-      }
   h3 {
     font-size: 1.9375rem; }
   h4 {
@@ -1626,7 +1614,7 @@ kbd {
     background-color: #EC655E;
     color: #fefefe; }
     .button.primary:hover, .button.primary:focus {
-      background-color: #c25650;
+      background-color: #B3D16C;
       color: #fefefe; }
   .button.secondary {
     background-color: #fff;
@@ -4172,8 +4160,12 @@ a.thumbnail {
 .columns.business {
   padding: 5vh;
 }
-.columns.delivery {
-  padding: 0 30vh ;
+@media screen and (min-width: 39.9375em) {
+  .columns.delivery {
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
 
 .marketing-site-hero-content .button.round {

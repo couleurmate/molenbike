@@ -7,7 +7,8 @@
     <meta name="author" content="couleurmate">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/flaticon/flaticon.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Inder|Arvo" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="../image/apple-touch-icon.png">
@@ -24,7 +25,6 @@
     <meta name="keywords" content="livraison à vélo bruxelles, koerierdienst, livraison, velo, livraison a domicile, coursier velo, bruxelles, brussels, brussel, delivery, levering, fiets, bio, ambachtelijk, biologisch, vrachtfiets, cargo bike, produits locaux, ..." />
 
     <!-- Compressed CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" integrity="sha256-itWEYdFWzZPBG78bJOOiQIn06QCgN/F0wMDcC4nOhxY=" crossorigin="anonymous" />
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,7 +41,7 @@
 
     <!-- Start Top Bar -->
       <header id="header" class="topbar-sticky-shrink-header molenlogo">
-        <img class="logo" src="../image/molenbike-logo.png" alt="Molenbike logo" itemprop="image"/>
+        <img class="logo animated pulse" src="../image/molenbike-logo.png" alt="Molenbike logo" itemprop="image"/>
         <div class="row column text-center">
           <h2 class="subtitle">Local & Fair Transport</h2>
           <h1 class="overtitle">Bike co-op</h1>
@@ -82,7 +82,7 @@
     <div class="marketing-site-features">
       <h2 class="marketing-site-features-headline white">A bike messengers cooperative</h2>
       <p class="marketing-site-features-subheadline subheader"><strong><span itemprop="name">Molenbike</span> is a bike messengers cooperative. We focus on transporting of local and eco-friendly products</strong></p>
-      <div class="row feature">
+      <div class="row feature animated" id="services">
         <div class="small-12 medium-3 columns">
           <i class="flaticon-bicycle" aria-hidden="true"></i>
           <h4 class="marketing-site-features-title">Bike logistics</h4>
@@ -115,32 +115,32 @@
         <h2 class="marketing-site-features-headline">Peloton</h2>
       </div>
       <div class="row testimonial small-up-2 medium-up-3">
-        <div class="columns profile-card">
+        <div class="columns profile-card animated">
           <img class="profile-pic red" src="../image/rack.svg" alt="“Carrier Cycle” icon by eric poscher, from thenounproject.com">
           <h4 class="prenom">Arnaud</h4>
           <p class="profile">Manager on pedals</p>
         </div>
-        <div class="columns profile-card">
+        <div class="columns profile-card animated">
           <img class="profile-pic black" src="../image/trolley.svg" alt="Delta Trike” icon by eric poscher, from thenounproject.com">
           <h4 class="prenom">Raphaël</h4>
           <p class="profile">Courrier Executive Officer</p>
         </div>
-        <div class="columns profile-card">
+        <div class="columns profile-card animated">
           <img class="profile-pic red" src="../image/omnium.svg" alt="“front loader” icon by eric poscher, from thenounproject.com">
           <h4 class="prenom">Sacha</h4>
           <p class="profile">Cargo Mechanic</p>
         </div>
-        <div class="columns profile-card">
+        <div class="columns profile-card animated">
           <img class="profile-pic black" src="../image/classic.svg" alt="“Diamond” icon by eric poscher, from thenounproject.com">
           <h4 class="prenom">Marie</h4>
           <p class="profile">Rolling Resource Management</p>
         </div>
-        <div class="columns profile-card">
+        <div class="columns profile-card animated">
           <img class="profile-pic red" src="../image/bakfiets.svg" alt="“Ackermann Trike” icon by eric poscher, from thenounproject.com">
           <h4 class="prenom">Antoine</h4>
           <p class="profile">E-President</p>
         </div>
-        <div class="columns profile-card">
+        <div class="columns profile-card animated">
           <img class="profile-pic black" src="../image/bullit.svg" alt="“Long John” icon by eric poscher, from thenounproject.com">
           <h4 class="prenom">Yogan</h4>
           <p class="profile">Jersey Designer</p>
@@ -166,11 +166,13 @@
             <button href="#" class="round button secondary" data-open="modalM2U">Molenbike 2 You</button>
           </div>
         </div>
+        <!--
         <div class="row business">
           <div class="small-12 columns delivery">
             <button href="#" class="round button success expanded" data-open="delivery">Demande de livraison</button>
           </div>
         </div>
+        -->
 
         <!-- B2B -->
         <div class="tiny reveal" id="modalB2B" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
@@ -252,13 +254,13 @@
               <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <!-- Delivery -->
+        <!-- Delivery
         <div class="reveal" id="delivery" data-reveal data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
             <iframe src="https://molenbike.coopcycle.org/fr/embed/delivery/start" width="100%" height="100%" frameborder="0"></iframe>
           <button class="close-button" data-close aria-label="Close modal" type="button">
               <span aria-hidden="true">&times;</span>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
