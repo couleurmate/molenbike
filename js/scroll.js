@@ -12,7 +12,7 @@ $(document).ready(function(){
       $("html, body").animate({ scrollTop: 0 }, 600);
       return false;
   });
-  
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -34,5 +34,23 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
+  });
+  $(window).scroll(function() {
+    $("#services").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("fadeInUp");
+      }
+    });
+    $(".profile-card").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("bounceIn");
+      }
+    });
   });
 });
