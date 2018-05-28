@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  new WOW().init();
+
   $(window).scroll(function(){
       if($(this).scrollTop() > 100){
           $('#backtop').fadeIn();
@@ -34,23 +36,5 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
-  });
-  $(window).scroll(function() {
-    $("#services").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("fadeInUp");
-      }
-    });
-    $(".profile-card").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
-        $(this).addClass("bounceIn");
-      }
-    });
   });
 });
