@@ -4423,8 +4423,28 @@ a.thumbnail {
       }
   }
   .client-box {
-    margin-top: 32%;
     max-width: 40vh;
+  }
+  #bruzz {
+    margin-top: 32%;
+  }
+  #rayonbio {
+    margin-top: 20%;
+  }
+  #cooking {
+    margin-top: 35%;
+  }
+  #cyclo {
+    margin-top: 35%;
+  }
+  #village {
+    margin-top: 30%;
+  }
+  #molengeek {
+    margin-top: 30%;
+  }
+  #coopcycle {
+    max-width: 8rem !important;
   }
   .client-noir {
     background-color: #000;
