@@ -4414,16 +4414,15 @@ a.thumbnail {
     }
   }
 .client-pic {
-  max-width: 9rem !important;
   box-sizing: border-box;
+  width: 90%;
+  display: block;
+  margin: auto;
 }
   @media screen and (max-width: 39.9375em) {
     .client-pic {
       max-width: 6rem !important;
       }
-  }
-  .client-box {
-    max-width: 40vh;
   }
   #bruzz {
     margin-top: 32%;
@@ -4444,7 +4443,10 @@ a.thumbnail {
     margin-top: 30%;
   }
   #coopcycle {
-    max-width: 8rem !important;
+    max-width: 8rem;
+  }
+  #bxl {
+    width: 100%;
   }
   .client-noir {
     background-color: #000;
