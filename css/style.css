@@ -3249,7 +3249,8 @@ html.is-reveal-open body {
   left: 0 !important;
   margin-right: auto;
   margin-left: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center;}
     #modalM2U {
       padding-top:10rem;
     }
