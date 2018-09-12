@@ -4615,15 +4615,13 @@ a.thumbnail {
 }
 
 .marketing-site-footer-bottom {
+  background: #020304;
   padding: 1rem 0;
 }
 
 .marketing-site-footer-bottom p,
 .marketing-site-footer-bottom .menu {
   margin-bottom: 0;
-  text-align: center;
-  font-size: 0.6rem;
-  color: #CCC;
 }
 
 .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
