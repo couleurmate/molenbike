@@ -1331,9 +1331,6 @@ h1 {
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem; }
-    .overtitle {
-      font-size: 1.25rem;
-    }
 
 h2 {
   font-family: 'Arvo', cursive, "Helvetica Neue", Helvetica, sans-serif;
@@ -1341,9 +1338,6 @@ h2 {
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 2rem; }
-    .subtitle {
-      font-size: 1.5rem;
-    }
 
 h3 {
   font-family: 'Arvo', cursive, "Helvetica Neue", Helvetica, sans-serif;
@@ -1376,14 +1370,8 @@ h6 {
 @media print, screen and (min-width: 40em) {
   h1 {
     font-size: 3rem; }
-      .overtitle {
-        font-size: 2.5rem;
-      }
   h2 {
     font-size: 2.5rem; }
-      .subtitle {
-        font-size: 3rem;
-      }
   h3 {
     font-size: 1.9375rem; }
   h4 {
@@ -1626,20 +1614,20 @@ kbd {
     background-color: #EC655E;
     color: #fefefe; }
     .button.primary:hover, .button.primary:focus {
-      background-color: #c25650;
+      background-color: #B3D16C;
       color: #fefefe; }
   .button.secondary {
-    background-color: #767676;
-    color: #fefefe; }
+    background-color: #fff;
+    color: #67675C; }
     .button.secondary:hover, .button.secondary:focus {
-      background-color: #5e5e5e;
-      color: #fefefe; }
+      background-color: #B3D16C;
+      color: #fff; }
   .button.success {
-    background-color: #3adb76;
-    color: #0a0a0a; }
+    background-color: #B3D16C;
+    color: #fff; }
     .button.success:hover, .button.success:focus {
-      background-color: #22bb5b;
-      color: #0a0a0a; }
+      background-color: #fff;
+      color: #67675C; }
   .button.warning {
     background-color: #ffae00;
     color: #0a0a0a; }
@@ -1667,14 +1655,14 @@ kbd {
         border-color: #933f3b;
         color: #933f3b; }
     .button.hollow.secondary {
-      border: 1px solid #767676;
-      color: #767676; }
+      border: 1px solid #fff;
+      color: #fff; }
       .button.hollow.secondary:hover, .button.hollow.secondary:focus {
         border-color: #3b3b3b;
         color: #3b3b3b; }
     .button.hollow.success {
-      border: 1px solid #3adb76;
-      color: #3adb76; }
+      border: 1px solid #B3D16C;
+      color: #B3D16C; }
       .button.hollow.success:hover, .button.hollow.success:focus {
         border-color: #157539;
         color: #157539; }
@@ -1706,13 +1694,13 @@ kbd {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.secondary, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #767676;
-        color: #fefefe; }
+        background-color: #fff;
+        color: #67675C; }
     .button.disabled.success, .button[disabled].success {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.success, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success, .button[disabled].success:hover, .button[disabled].success:focus {
-        background-color: #3adb76;
+        background-color: #B3D16C;
         color: #0a0a0a; }
     .button.disabled.warning, .button[disabled].warning {
       opacity: 0.25;
@@ -2066,10 +2054,10 @@ select {
     background: #1779ba;
     color: #fefefe; }
   .badge.secondary {
-    background: #767676;
-    color: #fefefe; }
+    background: #fff;
+    color: #67675C; }
   .badge.success {
-    background: #3adb76;
+    background: #B3D16C;
     color: #0a0a0a; }
   .badge.warning {
     background: #ffae00;
@@ -2171,16 +2159,16 @@ select {
       background-color: #126195;
       color: #fefefe; }
   .button-group.secondary .button {
-    background-color: #767676;
-    color: #fefefe; }
+    background-color: #fff;
+    color: #67675C; }
     .button-group.secondary .button:hover, .button-group.secondary .button:focus {
       background-color: #5e5e5e;
-      color: #fefefe; }
+      color: #67675C; }
   .button-group.success .button {
-    background-color: #3adb76;
+    background-color: #B3D16C;
     color: #0a0a0a; }
     .button-group.success .button:hover, .button-group.success .button:focus {
-      background-color: #22bb5b;
+      background-color: #fff;
       color: #0a0a0a; }
   .button-group.warning .button {
     background-color: #ffae00;
@@ -2810,10 +2798,10 @@ select {
     background: #1779ba;
     color: #fefefe; }
   .label.secondary {
-    background: #767676;
-    color: #fefefe; }
+    background: #fff;
+    color: #67675C; }
   .label.success {
-    background: #3adb76;
+    background: #B3D16C;
     color: #0a0a0a; }
   .label.warning {
     background: #ffae00;
@@ -3194,9 +3182,9 @@ select {
   .progress.primary .progress-meter {
     background-color: #1779ba; }
   .progress.secondary .progress-meter {
-    background-color: #767676; }
+    background-color: #fff; }
   .progress.success .progress-meter {
-    background-color: #3adb76; }
+    background-color: #B3D16C; }
   .progress.warning .progress-meter {
     background-color: #ffae00; }
   .progress.alert .progress-meter {
@@ -3257,11 +3245,18 @@ html.is-reveal-open body {
   position: fixed;
   top: 10% !important;
   right: 0;
-  bottom: 0;
+  bottom: 5%;
   left: 0 !important;
   margin-right: auto;
   margin-left: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center;}
+    #modalM2U {
+      padding-top:10rem;
+    }
+    #delivery {
+      top:5% !important;
+    }
   [data-whatinput='mouse'] .reveal {
     outline: 0; }
   @media print, screen and (min-width: 40em) {
@@ -4164,7 +4159,14 @@ a.thumbnail {
 }
 
 .columns.business {
-   padding: 5vh;
+  padding: 5vh;
+}
+@media screen and (min-width: 39.9375em) {
+  .columns.delivery {
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
 
 .marketing-site-hero-content .button.round {
@@ -4172,18 +4174,10 @@ a.thumbnail {
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 0;
-  color: #67675C;
-  background-color: #fff;
 }
   .marketing-site-hero-content .button.round.coop {
-    color: #fff;
-    background-color: #EC655E;
     display: inline-block;
     }
-.marketing-site-hero-content .button.round:hover {
-  background-color: #B3D16C;
-  color: #fff;
-}
 
 @media screen and (max-width: 39.9375em) {
   .marketing-site-hero-content {
@@ -4222,10 +4216,13 @@ a.thumbnail {
 }
 
 .marketing-site-features.who .profile-pic {
-  max-width: 10rem;
   border-radius: 50%;
   margin-bottom: 2rem;
+  transition: box-shadow 0.5s;
 }
+  .profile-pic:hover {
+    box-shadow: 5px 0px 25px rgba(0,0,0, .8);
+  }
   .profile-pic.red {
     background: #EC655E;
   }
@@ -4418,17 +4415,39 @@ a.thumbnail {
     }
   }
 .client-pic {
-  max-width: 9rem !important;
   box-sizing: border-box;
+  width: 90%;
+  display: block;
+  margin: auto;
 }
   @media screen and (max-width: 39.9375em) {
     .client-pic {
       max-width: 6rem !important;
       }
   }
-  .client-box {
+  #bruzz {
     margin-top: 32%;
-    max-width: 40vh;
+  }
+  #rayonbio {
+    margin-top: 20%;
+  }
+  #cooking {
+    margin-top: 35%;
+  }
+  #cyclo {
+    margin-top: 35%;
+  }
+  #village {
+    margin-top: 30%;
+  }
+  #molengeek {
+    margin-top: 30%;
+  }
+  #coopcycle {
+    max-width: 8rem;
+  }
+  #bxl {
+    width: 100%;
   }
   .client-noir {
     background-color: #000;
@@ -4545,6 +4564,9 @@ a.thumbnail {
   .marketing-site-footer .columns {
     margin-bottom: 2rem;
     text-align: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -4569,7 +4591,12 @@ a.thumbnail {
 
   @media screen and (max-width: 39.9375em) {
     .marketing-site-footer-block {
-      margin-left: 2rem !important; }}
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin-bottom: 2vh;
+      min-width: 40vh;
+      }}
 
 .marketing-site-footer-block .fas {
   font-size: 2rem;
@@ -4588,13 +4615,15 @@ a.thumbnail {
 }
 
 .marketing-site-footer-bottom {
-  background: #020304;
   padding: 1rem 0;
 }
 
 .marketing-site-footer-bottom p,
 .marketing-site-footer-bottom .menu {
   margin-bottom: 0;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #CCC;
 }
 
 .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
@@ -4612,12 +4641,6 @@ a.thumbnail {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (max-width: 63.9375em) {
-  .marketing-site-footer-bottom {
-    text-align: center;
   }
 }
 
