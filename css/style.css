@@ -4667,3 +4667,8 @@ a.thumbnail {
     background-color: #B3D16C;
     text-decoration: none;
 }
+
+/* Iframe Modal */
+.pricing-modal {
+  border: 0;
+}
