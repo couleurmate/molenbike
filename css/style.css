@@ -1383,11 +1383,11 @@ h6 {
 
 a {
   line-height: inherit;
-  color: #1779ba;
+  color: #B3D16C;
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #1468a0; }
+    color: #B3D16C; }
   a img {
     border: 0; }
 
@@ -4680,4 +4680,11 @@ a.thumbnail {
 /* Iframe Modal */
 .pricing-modal {
   border: 0;
+}
+
+#bclf {
+  max-height: 6em;
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }
