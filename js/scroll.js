@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+  // Open Modal on pageload
+  $('#coopModal').foundation('open');
+
   new WOW().init();
 
   $(window).scroll(function(){
@@ -37,6 +40,4 @@ $(document).ready(function(){
       });
     } // End if
   });
-  // Open Modal on pageload
-  $('#coopModal').foundation('reveal', 'open')});
 });
