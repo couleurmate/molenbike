@@ -37,4 +37,6 @@ $(document).ready(function(){
       });
     } // End if
   });
+  // Open Modal on pageload
+  $('#coopModal').foundation('reveal', 'open')});
 });

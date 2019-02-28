@@ -4091,7 +4091,7 @@ a.thumbnail {
 
 .marketing-site-features .marketing-site-features-title {
   font-size: 1.125rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 40em) {
@@ -4685,4 +4685,9 @@ a.thumbnail {
   background-color: #fff;
   padding: 0.5em;
   border-radius: 0.5em;
+}
+
+/* Appel Coop */
+#molenteam {
+  max-width: 75%;
 }
