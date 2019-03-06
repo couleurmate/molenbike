@@ -2188,7 +2188,7 @@ select {
       margin-bottom: 0; }
   @media screen and (max-width: 39.9375em) {
     .button-group {
-      margin-top: 2rem !important;
+      margin-top: 4rem !important;
       margin-bottom: 0 !important; } }
   @media print, screen and (min-width: 40em) {
     .button-group.stacked-for-small .button {
@@ -4651,6 +4651,12 @@ a.thumbnail {
   }
 }
 
+/* Language buttons */
+
+.button-language {
+  margin-top: 5rem;
+}
+
 /* Back to top button */
 #backtop {
     display: none;
@@ -4688,6 +4694,10 @@ a.thumbnail {
 }
 
 /* Appel Coop */
+#coopModal {
+  padding-top: 11rem;
+  border: solid 0.5rem #EC655E;
+}
 #molenteam {
   max-width: 75%;
 }
