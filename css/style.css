@@ -1977,6 +1977,7 @@ select {
 
 .accordion {
   margin-left: 0;
+  padding-left: 0;
   background: #fefefe;
   list-style-type: none; }
 
@@ -1990,16 +1991,15 @@ select {
   position: relative;
   display: block;
   padding: 1.25rem 1rem;
-  border: 1px solid #e6e6e6;
   border-bottom: 0;
-  font-size: 0.75rem;
-  line-height: 1;
-  color: #1779ba; }
+  line-height: 1; }
   :last-child:not(.is-active) > .accordion-title {
     border-bottom: 1px solid #e6e6e6;
-    border-radius: 0 0 0 0; }
-  .accordion-title:hover, .accordion-title:focus {
-    background-color: #e6e6e6; }
+    border-radius: 0 0 0 0;
+   }
+  .accordion-title:active, .accordion-title:hover, .accordion-title:focus {
+    background-color: #B3D16C;
+    color: #fff;}
   .accordion-title::before {
     position: absolute;
     top: 50%;
@@ -2021,19 +2021,6 @@ select {
 
 .is-accordion-submenu-parent > a {
   position: relative; }
-  .is-accordion-submenu-parent > a::after {
-    display: block;
-    width: 0;
-    height: 0;
-    border: inset 6px;
-    content: '';
-    border-bottom-width: 0;
-    border-top-style: solid;
-    border-color: #1779ba transparent transparent;
-    position: absolute;
-    top: 50%;
-    margin-top: -3px;
-    right: 1rem; }
 
 .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
   -ms-transform: rotate(180deg);
