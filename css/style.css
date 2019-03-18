@@ -227,7 +227,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: "Arvo", sans-serif;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -1977,6 +1977,7 @@ select {
 
 .accordion {
   margin-left: 0;
+  padding-left: 0;
   background: #fefefe;
   list-style-type: none; }
 
@@ -1990,16 +1991,15 @@ select {
   position: relative;
   display: block;
   padding: 1.25rem 1rem;
-  border: 1px solid #e6e6e6;
   border-bottom: 0;
-  font-size: 0.75rem;
-  line-height: 1;
-  color: #1779ba; }
+  line-height: 1; }
   :last-child:not(.is-active) > .accordion-title {
     border-bottom: 1px solid #e6e6e6;
-    border-radius: 0 0 0 0; }
-  .accordion-title:hover, .accordion-title:focus {
-    background-color: #e6e6e6; }
+    border-radius: 0 0 0 0;
+   }
+  .accordion-title:active, .accordion-title:hover, .accordion-title:focus {
+    background-color: #B3D16C;
+    color: #fff;}
   .accordion-title::before {
     position: absolute;
     top: 50%;
@@ -2021,19 +2021,6 @@ select {
 
 .is-accordion-submenu-parent > a {
   position: relative; }
-  .is-accordion-submenu-parent > a::after {
-    display: block;
-    width: 0;
-    height: 0;
-    border: inset 6px;
-    content: '';
-    border-bottom-width: 0;
-    border-top-style: solid;
-    border-color: #1779ba transparent transparent;
-    position: absolute;
-    top: 50%;
-    margin-top: -3px;
-    right: 1rem; }
 
 .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
   -ms-transform: rotate(180deg);
@@ -2188,7 +2175,7 @@ select {
       margin-bottom: 0; }
   @media screen and (max-width: 39.9375em) {
     .button-group {
-      margin-top: 2rem !important;
+      margin-top: 4rem !important;
       margin-bottom: 0 !important; } }
   @media print, screen and (min-width: 40em) {
     .button-group.stacked-for-small .button {
@@ -4091,7 +4078,7 @@ a.thumbnail {
 
 .marketing-site-features .marketing-site-features-title {
   font-size: 1.125rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 @media screen and (min-width: 40em) {
@@ -4121,7 +4108,7 @@ a.thumbnail {
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 4rem;
+  margin: 4rem 0;
 }
 
 .marketing-site-hero {
@@ -4651,6 +4638,12 @@ a.thumbnail {
   }
 }
 
+/* Language buttons */
+
+.button-language {
+  margin-top: 5rem;
+}
+
 /* Back to top button */
 #backtop {
     display: none;
@@ -4685,4 +4678,20 @@ a.thumbnail {
   background-color: #fff;
   padding: 0.5em;
   border-radius: 0.5em;
+}
+
+/* Appel Coop */
+.coop-button {
+  padding: 0 25rem;
+  text-align: center;
+}
+#coopModal {
+  padding-top: 11rem;
+  border: solid 0.5rem #EC655E;
+}
+#molenteam {
+  max-width: 75%;
+}
+#cnc {
+  max-width: 50%;
 }

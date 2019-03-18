@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+  // Open Modal on pageload
+  $('#coopModal').foundation('open');
+
   new WOW().init();
 
   $(window).scroll(function(){

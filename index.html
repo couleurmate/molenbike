@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Inder|Arvo" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
@@ -47,7 +47,7 @@
           <h2 class="subtitle">Local & Fair Transport</h2>
           <h1 class="overtitle">Coopérative de coursiers à vélo</h1>
           <h3>Livraisons de produits éco-responsables à Bruxelles</h3>
-          <div class="button-group">
+          <div class="button-group button-language">
             <a class="button primary" href="index.html">FR</a>
             <a class="hollow button primary" href="nl/index.html">NL</a>
             <a class="hollow button primary" href="en/index.html">EN</a>
@@ -55,29 +55,19 @@
         </div>
       </header>
 
-      <!-- Banner
-      <div data-sticky-container>
-        <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
-          <div class="top-bar topbar-sticky-shrink">
-            <div class="top-bar-right">
-              <p class="banner-sticky">Molenbike a été sélectionné pour le Prix de l'Economie Sociale 2017 !!!
-                <br>Nous avons besoin de votre participation pour faire de Molenbike le projet écologique, social et solidaire que nous portons chaque jour avec passion.
-                Votez pour nous avant le 25 novembre<br>
-              </p>
-                <a class="button button-like" href="http://www.prixdeleconomiesociale.be/vote_2017/affiche_entreprise.php?id=101" target="_blank">
-                  <i class="fa fa-heart"></i>
-                  <span>Votez !</span>
-                </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    -->
-
     <!-- End Top Bar -->
 
     <!-- Content -->
 <div class="column row" id="content">
+  <div class="tiny reveal" id="coopModal" data-reveal data-animation-in="fade-in fast" data-animation-out="fade-out fast">
+    <h3>Appel public à l'épargne</h3>
+    <h4>La coopérative ouvre son capital social !</h4>
+    <h5>Et vous pouvez devenir notre nouveau coopérateur/rice</h5>
+    <a href="coop.html" class="button primary">Plus d'information ici !</a>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 
   <section>
     <div class="marketing-site-features">
@@ -231,7 +221,7 @@
             <button href="#" class="round button primary" data-open="statut">Nos statuts</button>
           </div>
           <div class="small-12 large-4 columns business">
-            <a href="mailto:info@molenbike.be" class="round button primary">Être acteur de la coop !</a>
+            <a href="coop.html" class="round button primary">Être acteur de la coop !</a>
           </div>
         </div>
         <!-- Charte -->
