@@ -2006,6 +2006,12 @@ select {
     right: 1rem;
     margin-top: -0.5rem;
     content: '+'; }
+        @media screen and (max-width: 39.9375em) {
+          .accordion-title::before {
+            right: 0.5rem;
+            }
+          }
+
   .is-active > .accordion-title::before {
     content: '\2013'; }
 
@@ -2027,6 +2033,10 @@ select {
       transform: rotate(180deg);
   -ms-transform-origin: 50% 50%;
       transform-origin: 50% 50%; }
+
+.menu.vertical.nested.submenu.is-accordion-submenu.is-active {
+  padding: 0 0.5rem;
+}
 
 .badge {
   display: inline-block;
@@ -4088,7 +4098,7 @@ a.thumbnail {
 }
 .marketing-site-features-desc {
   color: #fff;
-  padding: 0 2rem 0 2rem;
+  padding: 0 1rem 2rem;
 }
 
 .marketing-site-features-headline {
@@ -4144,7 +4154,7 @@ a.thumbnail {
 }
 
 .columns.business {
-  padding: 5vh;
+  padding: 5vh 0;
 }
 @media screen and (min-width: 39.9375em) {
   .columns.delivery {
@@ -4198,8 +4208,14 @@ a.thumbnail {
 
 .profile-card {
   margin-top: 2rem;
-  min-height: 20rem; 
+  min-height: 20rem;
 }
+  @media screen and (max-width: 39.9375em) {
+    .profile-card {
+      margin-top: 0;
+      min-height: 15rem;
+    }
+  }
 
 .marketing-site-features.who .profile-pic {
   border-radius: 50%;
@@ -4207,6 +4223,12 @@ a.thumbnail {
   width: 12rem;
   height: 12rem;
 }
+  @media screen and (max-width: 39.9375em) {
+    .marketing-site-features.who .profile-pic {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
   .profile-pic.red {
     background: #EC655E;
   }
@@ -4220,7 +4242,7 @@ a.thumbnail {
   }
 
 @media screen and (max-width: 39.9375em) {
-  .testimonial .marketing-site-features.who .featured-testimonials-quotation {
+  .marketing-site-features.who .testimonial {
     margin: 1rem 0;
   }
 }
@@ -4681,12 +4703,16 @@ a.thumbnail {
 
 /* Appel Coop */
 .coop-button {
-  padding: 0 25rem;
   text-align: center;
 }
 #coopModal {
   padding-top: 11rem;
   border: solid 0.5rem #EC655E;
+}
+#coopForm {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 #molenteam {
   max-width: 75%;
@@ -4695,8 +4721,16 @@ a.thumbnail {
   max-width: 55%;
   margin: auto;
 }
+  @media screen and (max-width: 39.9375em) {
+    #faqAccordion {
+      max-width: 100%;
+    }
+  }
 #cnc {
   max-width: 50%;
+}
+.form-button {
+  margin-top:2rem;
 }
 
 /* Flip Cards */
