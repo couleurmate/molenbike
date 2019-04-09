@@ -4706,9 +4706,13 @@ a.thumbnail {
   text-align: center;
 }
 #coopModal {
-  padding-top: 11rem;
   border: solid 0.5rem #EC655E;
 }
+  .center-modal {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 #coopForm {
   display: table-cell;
   text-align: center;
