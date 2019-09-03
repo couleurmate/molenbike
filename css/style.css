@@ -1629,11 +1629,11 @@ kbd {
       background-color: #fff;
       color: #67675C; }
   .button.warning {
-    background-color: #ffae00;
-    color: #0a0a0a; }
+    background-color: #B3D16C;
+    color: #fff; }
     .button.warning:hover, .button.warning:focus {
-      background-color: #cc8b00;
-      color: #0a0a0a; }
+      background-color: #fff;
+      color: #67675C; }
   .button.alert {
     background-color: #EC655E;
     color: #fefefe; }
@@ -4477,6 +4477,14 @@ a.thumbnail {
   .client-spores {
     margin-top: 20%;
   }
+  .partner {
+    background-color: #B3D16C;
+  }
+    .partner-button {
+      height:100%;
+      padding: 1.3em 1em;
+      line-height: 1.5;
+    }
 
 /* Footer */
 .marketing-site-footer {
