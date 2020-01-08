@@ -4847,9 +4847,14 @@ a.thumbnail {
     }
 
 /* Image Hover Wrapper */
+    .coverage {
+      max-width: 85%;
+      margin: auto;
+    }
 
     .image-hover-wrapper {
     position: relative;
+    margin-bottom: 1rem;
     }
 
     .image-hover-wrapper a {
@@ -4865,6 +4870,10 @@ a.thumbnail {
     float: left;
     overflow: hidden;
     width: 100%;
+    max-height: 25vh;
+    border-width: 0.3em;
+    border-style: solid;
+    border-color: rgba(236, 101, 94, 0.8);
     }
 
     .image-hover-wrapper a .image-hover-wrapper-reveal {
@@ -4916,7 +4925,7 @@ a.thumbnail {
     left: 0;
     padding: 0.5rem;
     position: absolute;
-    top: 25%;
+    top: 60%;
     width: 75%;
     z-index: 10;
     }
