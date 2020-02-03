@@ -4914,6 +4914,13 @@ a.thumbnail {
     transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
+    @media screen and (max-width: 39.9375em) {
+      .image-hover-wrapper a .image-hover-wrapper-reveal p {
+        bottom: 0;
+        top: 75%;
+      }
+    }
+
     .image-hover-wrapper a .fa {
     font-size: 24px;
     }
@@ -4929,3 +4936,11 @@ a.thumbnail {
     width: 75%;
     z-index: 10;
     }
+
+        @media screen and (max-width: 39.9375em) {
+          .image-hover-wrapper .image-hover-wrapper-banner {
+            width: 100%;
+            top: 25%;
+            font-size: 0.7em;
+            }
+        }
