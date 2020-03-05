@@ -5027,6 +5027,10 @@ a.thumbnail {
 .wide-article-link .article-social .social > .fa.fa-comments-o {
   margin-right: 0.25rem;
 }
+.marketing-site-features.client-du-mois {
+  min-height: 25vh;
+}
+
 .client-du-mois {
   padding: 1em;
 }

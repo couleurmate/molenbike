@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Inder|Arvo" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
@@ -59,36 +61,10 @@
 <div class="column row" id="content">
 
   <section>
-    <div class="marketing-site-features">
+    <div class="marketing-site-features client-du-mois">
       <h2 class="marketing-site-features-headline white">La Fruitière, fromagerie du centre</h2>
         <h4 class="marketing-site-features-headline">Artisans. Dégustation, fabrication et affinage de fromages</h4>
           <h5 class="marketing-site-features-headline"><a href="https://goo.gl/maps/tAT1Y1AccrVU2M1V9">Rue du Marché au Charbon 99 /103, 1000 Bruxelles</a></h5>
-      <div class="row feature">
-        <div class="small-12 medium-3 columns wow fadeInUp">
-          <i class="far fa-handshake fa-3x white" aria-hidden="true"></i>
-          <h4 class="marketing-site-features-title">Pour un engagement solidaire</h4>
-          <p class="marketing-site-features-desc"><strong>Une société commerciale est capitalisée. La différence avec une société coopérative, c'est que toute personne peut participer au capital et donner du sens à cet investissement : renforcer le lien social, promouvoir la santé publique par le sport, encourager la création d'emploi, fortifier un modèle économique pour un futur durable à <span itemprop="areaServed">Bruxelles</span></strong></p>
-        </div>
-        <div class="small-12 medium-3 columns wow fadeInUp">
-          <i class="fas fa-people-carry fa-3x white" aria-hidden="true"></i>
-          <h4 class="marketing-site-features-title">Pour une responsabilité sociale</h4>
-          <p class="marketing-site-features-desc"><strong>L'entrepreneuriat social a le vent en poupe ! C'est une alternative économique crédible et car il permet de donner du sens au capital : être acteur/rice de l'emploi durable et du commerce équitable en <span itemprop="areaServed">Région de Bruxelles-Capitale</span> par la matérialisation de services logistiques communs</strong></p>
-        </div>
-        <div class="small-12 medium-3 columns wow fadeInUp">
-          <i class="fas fa-search fa-3x white" aria-hidden="true"></i>
-          <h4 class="marketing-site-features-title">Pour une économie transparente</h4>
-          <p class="marketing-site-features-desc"><strong>Participer au capital, c'est aussi devenir copropriétaire de la coopérative et avoir, de ce fait, un droit de regard critique sur la gestion de celle-ci. La transparence est une valeur centrale via la publication en ligne de nos documents légaux, de l'organisation annuelle d'une Assemblée Générale</strong>
-          </p>
-        </div>
-        <div class="small-12 medium-3 columns wow fadeInUp">
-          <img src="image/reBXL.svg" class="white"></img>
-          <h4 class="marketing-site-features-title">Pour Bruxelles, en mieux</h4>
-          <p class="marketing-site-features-desc"><strong>Nous sommes convaincus qu'une logistique à vélo plus développée en fera de Bruxelles plus épanouie, plus durable et surtout plus agréable. Nous travaillons avec des coursiers qui aiment leur ville et souhaite une mobilité plus en phase avec les défis environnementaux d’aujourd’hui. Nos clients sont partie intégrante du tissu socio-économique d'un commerce local, durable et équitable.</strong></p>
-        </div>
-      </div>
-      <div class="row coop-button">
-        <a href="#client-du-mois-fruitiere" class="button large secondary wow heartBeat">Vers l'article</a>
-      </div>
     </div>
   </section>
 
@@ -137,6 +113,24 @@
               <a href="#" class="button social instagram">
                 <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
               </a>
+            </div>
+          </div>
+          <div class="row feature">
+            <div class="small-12 medium-6 columns">
+              <img style='max-width: 25em' src="image/client/fruitiere.jpg" alt="La Fruitière">
+              <p class="article-elipsis"><a href="https://lafruitiere.business.site/" target="_blank">https://lafruitiere.business.site/</a>
+              <br>Ouvert du mardi au samedi.
+              <br><a href="https://goo.gl/maps/tAT1Y1AccrVU2M1V9">Rue du Marché au Charbon 99 /103, 1000 Bruxelles</a></p>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <div id='map' style='width: 600px; height: 400px;'></div>
+                <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZG1pdHJpY29uY2hhIiwiYSI6ImEyNDUzOTQ4YzAwMTYwZmZlNGVhZmIwZjMyM2Q0ODA5In0.6zecyGhlFiR2wGc8PEL3GQ';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/dmitriconcha/ck7eroyoy1y0l1imlias2r1af'
+                });
+                </script>
             </div>
           </div>
         </div>
