@@ -4944,3 +4944,93 @@ a.thumbnail {
             font-size: 0.7em;
             }
         }
+
+/* Client du mois */
+
+.wide-article-link {
+  background-color: #fefefe;
+  padding: 1rem 1rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.wide-article-link .article-title a {
+  color: #0a0a0a;
+}
+
+.wide-article-link .article-title a:hover, .wide-article-link .article-title a:focus {
+  color: #1779ba;
+}
+
+.wide-article-link .article-elipsis .read-more {
+  font-weight: bold;
+}
+
+.wide-article-link .article-title,
+.wide-article-link .article-author,
+.wide-article-link .article-elipsis {
+  margin-bottom: 0.25rem;
+  margin-right: 2em;
+}
+
+.wide-article-link .article-social {
+  margin-top: 0.75rem;
+}
+
+.wide-article-link .article-social .social {
+  margin-right: 0.25rem;
+}
+
+.wide-article-link .article-social .social.comments {
+  background-color: #8a8a8a;
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .social.comments:hover, .wide-article-link .article-social .social.comments:focus {
+  background-color: #6e6e6e;
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .social.facebook {
+  background-color: #3b5998;
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .social.facebook:hover, .wide-article-link .article-social .social.facebook:focus {
+  background-color: #2f477a;
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .social.twitter {
+  background-color: #55acee;
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .social.twitter:hover, .wide-article-link .article-social .social.twitter:focus {
+  background-color: #1a8fe8;
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .instagram {
+  background-color: #000;
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .instagram:hover, .wide-article-link .article-social .instagram:focus {
+  background-color: #545454;
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .social > .fa {
+  color: #fefefe;
+}
+
+.wide-article-link .article-social .social > .fa.fa-comments-o {
+  margin-right: 0.25rem;
+}
+.client-du-mois {
+  padding: 1em;
+}
+.client-du-mois-titre {
+  margin: 1em 0 0.5em;
+  color: #EC655E;
+}
