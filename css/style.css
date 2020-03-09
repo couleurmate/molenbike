@@ -4682,7 +4682,7 @@ a.thumbnail {
 
 /* Back to top button */
 #backtop {
-    display: none;
+    display: inline-block;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
@@ -5029,6 +5029,7 @@ a.thumbnail {
 }
 .marketing-site-features.client-du-mois {
   min-height: 25vh;
+  padding: 10vh 1rem;
 }
 
 .client-du-mois {
