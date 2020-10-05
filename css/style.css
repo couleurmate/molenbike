@@ -4422,7 +4422,6 @@ a.thumbnail {
   }
 .client-pic {
   box-sizing: border-box;
-  width: 90%;
   display: block;
   margin: auto;
 }
